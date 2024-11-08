@@ -1,7 +1,7 @@
 from colorama import Fore, Style
 from time import sleep 
 from os import system 
-from sms import SendSms #bu paket @tingirifistik tarafından yazılmıştır ve @Rootninja tarafından buglar düzeltilmşiştir
+from sms import SendSms #bu paket @tingirifistik tarafından yazılmıştır ve @Rootninja tarafından buglar düzeltilip program daha güzelleştirilmiştir
 from concurrent.futures import ThreadPoolExecutor, wait
 
 servisler_sms = []
@@ -41,7 +41,7 @@ while 1:#bir döngü olşsun
         tel_liste = []
         try:
             int(tel_no)
-            if len(tel_no) != 10:#10 karakterden az ise geçirmesin
+            if len(tel_no) != 10:
                 raise ValueError
             tel_liste.append(tel_no)
             sonsuz = "(Sonsuz ise 'enter' tuşuna basınız)"  
@@ -50,6 +50,17 @@ while 1:#bir döngü olşsun
                print(Fore.LIGHTRED_EX + "Hatalı telefon numarası. Tekrar deneyiniz.") 
                sleep(3)
                continue
+        system("cls||clear")
+        try:
+            print(Fore.LIGHTYELLOW_EX + "Mail adresi (Bilmiyorsanız 'enter' tuşuna basın): "+ Fore.LIGHTGREEN_EX, end="")
+            mail = input()
+            if ("@" not in mail or ".com" not in mail) and mail != "":
+                raise
+        except:
+            system("cls||clear")
+            print(Fore.LIGHTRED_EX + "Hatalı mail adresi. Tekrar deneyiniz.") 
+            sleep(3)
+            continue
         system("cls||clear")
         try:
             print(Fore.LIGHTYELLOW_EX + f"Kaç adet SMS göndermek istiyorsun {sonsuz}: "+ Fore.LIGHTGREEN_EX, end="")
@@ -74,7 +85,7 @@ while 1:#bir döngü olşsun
             continue
         system("cls||clear")
         if kere is None: 
-            sms = SendSms(tel_no)
+            sms = SendSms(tel_no, mail)
             while True:
                 for attribute in dir(SendSms):
                     attribute_value = getattr(SendSms, attribute)
@@ -83,7 +94,7 @@ while 1:#bir döngü olşsun
                             exec("sms."+attribute+"()")
                             sleep(aralik)
         for i in tel_liste:
-            sms = SendSms(i)
+            sms = SendSms(i, mail)
             if isinstance(kere, int):
                     while sms.adet < kere:
                         for attribute in dir(SendSms):
@@ -114,7 +125,7 @@ while 1:#bir döngü olşsun
             sleep(3)
             continue
         system("cls||clear")
-        send_sms = SendSms(tel_no)
+        send_sms = SendSms(tel_no, mail)
         try:
             while True:
                 with ThreadPoolExecutor() as executor:#bu kod bizim mesaj atma işlemerimizi tek arametre ile yaptığımız ve daha hızlı olan kod
