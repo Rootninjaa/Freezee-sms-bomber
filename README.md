@@ -4,9 +4,22 @@ Freezee sms bomber Enough adlı toolun geliştirilmiş versiyonudur buglar düze
 
 ## Nasıl kullanılır?
 
+
 ![main](https://github.com/user-attachments/assets/92cc6967-19b1-40bf-a1e3-770e0aae166c)
 
-kullanmak için sms.py ve Freezee.py dosyalarını aynı dizine atın ardından çalıştırın
+kullanmak için sms.py ve Freezee.py dosyalarını aynı dizine atın ardından çalıştırın eğer termux kullanıyorsanız bu kodu yazın:
+
+```bash
+pkg install git
+pkg install python3
+pkg install perl
+pkg install php
+
+git clone https://github.com/Rootninjaa/Freezee-sms-bomber.git
+cd Freezee-sms-bomber
+pip3 install -r requirements.txt
+python3 Freezee.py
+```
 
 hangi modu kullanmak istediğinizi seçin
 
