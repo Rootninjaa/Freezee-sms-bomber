@@ -124,6 +124,11 @@ while 1:#bir döngü olşsun
             print(Fore.LIGHTRED_EX + "Hatalı telefon numarası. Tekrar deneyiniz.") 
             sleep(3)
             continue
+
+            mail = input()
+            if ("@" not in mail or ".com" not in mail) and mail != "":
+                raise
+
         system("cls||clear")
         send_sms = SendSms(tel_no)
         try:
