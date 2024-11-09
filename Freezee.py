@@ -1,3 +1,4 @@
+
 from colorama import Fore, Style
 from time import sleep 
 from os import system 
@@ -107,14 +108,17 @@ while 1:#bir döngü olşsun
                                     sleep(aralik)
         print(Fore.LIGHTRED_EX + "\nMenüye dönmek için 'enter' tuşuna basınız..")
         input()
+
     elif menu == 3:
         system("cls||clear")
         print(Fore.LIGHTRED_EX + "Çıkış yapılıyor...")
         break
+
     elif menu == 2:
         system("cls||clear")
         print(Fore.LIGHTYELLOW_EX + "Telefon numarasını başında '+90' olmadan yazınız: "+ Fore.LIGHTGREEN_EX, end="")
         tel_no = input()
+        mail = input("enter'a basın...")
         try:
             int(tel_no)
             if len(tel_no) != 10:
@@ -124,11 +128,6 @@ while 1:#bir döngü olşsun
             print(Fore.LIGHTRED_EX + "Hatalı telefon numarası. Tekrar deneyiniz.") 
             sleep(3)
             continue
-
-            mail = input()
-            if ("@" not in mail or ".com" not in mail) and mail != "":
-                raise
-
         system("cls||clear")
         send_sms = SendSms(tel_no, mail)
         try:
