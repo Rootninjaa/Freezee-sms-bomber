@@ -130,7 +130,7 @@ while 1:#bir döngü olşsun
                 raise
 
         system("cls||clear")
-        send_sms = SendSms(tel_no)
+        send_sms = SendSms(tel_no, mail)
         try:
             while True:
                 with ThreadPoolExecutor() as executor:#bu kod bizim mesaj atma işlemerimizi tek arametre ile yaptığımız ve daha hızlı olan kod
