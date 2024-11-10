@@ -1,4 +1,3 @@
-
 from colorama import Fore, Style
 from time import sleep 
 from os import system 
@@ -51,21 +50,11 @@ while 1:#bir döngü olşsun
                print(Fore.LIGHTRED_EX + "Hatalı telefon numarası. Tekrar deneyiniz.") 
                sleep(3)
                continue
-        system("cls||clear")
         try:
-            print(Fore.LIGHTYELLOW_EX + "Mail adresi (Bilmiyorsanız 'enter' tuşuna basın): "+ Fore.LIGHTGREEN_EX, end="")
-            mail = input()
-            if ("@" not in mail or ".com" not in mail) and mail != "":
-                raise
-        except:
             system("cls||clear")
-            print(Fore.LIGHTRED_EX + "Hatalı mail adresi. Tekrar deneyiniz.") 
-            sleep(3)
-            continue
-        system("cls||clear")
-        try:
             print(Fore.LIGHTYELLOW_EX + f"Kaç adet SMS göndermek istiyorsun {sonsuz}: "+ Fore.LIGHTGREEN_EX, end="")
             kere = input()
+            mail = input("entar'a basın...")
             if kere:
                 kere = int(kere)
             else:
