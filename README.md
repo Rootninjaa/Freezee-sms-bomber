@@ -4,6 +4,8 @@ Freezee sms bomber Enough adlı toolun geliştirilmiş versiyonudur buglar düze
 
 ## Nasıl kullanılır?
 
+dikkat turboda hata alirsaniz cikis uapip tekrar klonlayin
+
 
 ![main](https://github.com/user-attachments/assets/92cc6967-19b1-40bf-a1e3-770e0aae166c)
 
