@@ -32,6 +32,22 @@ pip3 install -r requirements.txt
 python3 Freezee.py
 ```
 
+<h3>Debian/Kali</h3>
+<p>kullanmak için sms.py ve Freezee.py dosyalarını aynı dizine atın ardından çalıştırın/p>
+<p>Debian, Pardus, Ubuntu, Kali Linux, Linux Mint vb.</p>
+
+```bash
+sudo apt install python3-venv python3-pip git php perl
+
+python3 -m venv lib
+source lib/bin/activate
+
+git clone https://github.com/Rootninjaa/Freezee-sms-bomber.git
+cd Freezee-sms-bomber
+pip3 install -r requirements.txt
+python3 Freezee.py
+```
+
 hangi modu kullanmak istediğinizi seçin
 
 başına 0 koymadan numaranızı yazmasını ister
