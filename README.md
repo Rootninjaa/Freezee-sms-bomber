@@ -16,7 +16,7 @@ dikkat turboda hata alirsaniz cikis uapip tekrar klonlayin
 
 ![main](https://github.com/user-attachments/assets/92cc6967-19b1-40bf-a1e3-770e0aae166c)
 
-### Kurulum
+## Kurulum
 <h3>Termux:</h3>
 <p>kullanmak için sms.py ve Freezee.py dosyalarını aynı dizine atın ardından çalıştırın eğer termux kullanıyorsanız bu kodu yazın:</p>
 
