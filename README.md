@@ -47,7 +47,7 @@ cd Freezee-sms-bomber
 pip3 install -r requirements.txt
 python3 Freezee.py
 ```
-
+## Kullanım
 hangi modu kullanmak istediğinizi seçin
 
 başına 0 koymadan numaranızı yazmasını ister
