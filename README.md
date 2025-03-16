@@ -19,6 +19,7 @@ dikkat turboda hata alirsaniz cikis uapip tekrar klonlayin
 <h2>kullanmak için sms.py ve Freezee.py dosyalarını aynı dizine atın ardından çalıştırın eğer termux kullanıyorsanız bu kodu yazın:</h2>
 <br>
 <h3>Termux:</h3>
+
 ```bash
 pkg install git
 pkg install python3
