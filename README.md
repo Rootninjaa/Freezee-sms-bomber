@@ -60,9 +60,8 @@ ve birkaç şeyleri tamamladıktan sonra mesajlar gönderilecektir
 
 ![WhatsApp Image 2024-11-08 at 23 05 35](https://github.com/user-attachments/assets/eac9c766-4278-4772-82fd-c64f2759c74e)
 
-## Dikkat!!
 
-Bu tool sadece şaka amaçlı kullanılmalıdır ben ve tingirifistik bu olaydan asla sorumlu değildir
+> **⚠️ Uyarı:** Bu bir uyarı mesajıdır!Bu tool sadece şaka amaçlı kullanılmalıdır ben ve tingirifistik bu olaydan asla sorumlu değildir
 <div align="center">
   
   <a>
